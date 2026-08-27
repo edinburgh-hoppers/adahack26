@@ -1,7 +1,7 @@
 :root {
     --gr: calc((1 + (5)^(0.5))/2);
     --height: 3vh;
-    --speed: 30s;
+    --speed: 60s;
 }
 
 body {
@@ -26,72 +26,161 @@ img {
 }
 
 section {
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
-#hero h1 {
-    font-size: calc(6*1.618rem);
+#hero {
+    overflow: clip;
+    display: relative;
+}
+
+#hero .a .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
     margin: 0;
     margin-top: 10vh;
     margin-left: 10vw;
-    font-family: BespokeStencil-Bold, sans-serif;
 }
 
-#hero h2 {
+#hero .a .adahacktitle {
     margin: 0;
+    margin-top: 10vh;
     margin-left: 10vw;
 }
 
-.ticker-tape {
+#hero .a .adahacksubtitle {
+    margin-left: 10vw;
+    margin-top: 0;
+}
+
+#hero .a h1 {
+    font-size: calc(6*1.618rem);
+    font-family: BespokeStencil-Bold, sans-serif;
+    margin: 0;
+}
+
+#hero .a h2 {
+    margin: 0;
+}
+
+#hero .b {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    text-align: right;
+}
+
+#hero .b h1 {
+    color: #C1D9F7;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-size: calc(6*1.618rem);
+    font-family: BespokeStencil-Bold, sans-serif;
+    line-height: 0.8;
+    margin-top: 10vw;
+    margin-right: 10vh;
+}
+
+@media only screen and (max-width: 1100px) {
+    #hero .b {
+        display: none;
+    }
+}
+
+#about fieldset {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    border: 0 none;
+}
+
+#about fieldset legend, #about fieldset div div h2 {
+    font-family: BespokeStencil-Bold, sans-serif;
+}
+
+#about fieldset div {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#about fieldset div img {
+    margin: 0;
+    margin-bottom: 3vh;
+    margin-right: 3vw;
+    height: 80vh;
+    /*box-shadow: 6px 5px 13px #444;*/
+    float: left;
+    /*clip-path: ellipse(40% 50%);
+    shape-outside: ellipse(45% 50%);*/
+    border: 12px ridge burlywood;
+
+    flex: 0 0 auto;
+}
+
+#about fieldset div div {
+    font-size: 1.8rem;
+    flex: 1 1 0;
+    min-width: 30ch;
+}
+
+#about fieldset div div p {
+    margin: 0;
+}
+
+#schedule fieldset {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    border: 0 none;
+}
+
+#schedule fieldset legend {
+    font-family: BespokeStencil-Bold, sans-serif;
+}
+
+#schedule p {
+    border-radius: 25px;
+    background-color: black;
+    background-image: radial-gradient(
+        rgba(0, 150, 0, 0.75), black 120%
+    );
+    margin: 0;
     overflow: hidden;
-    height: var(--height);
-    padding-left: 100%;
-}
+    padding: 2rem;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
 
-.ticker-tape .ticker {
-    height: var(--height);
-    line-height: var(--height);
-    white-space: nowrap;
-    padding-right: 100%;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-name: ticker;
-    -webkit-animation-duration: var(--speed);
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: ticker;
-    animation-duration: var(--speed);
-}
-
-.ticker-tape .ticker__item {
-    display: inline-block;
-    padding: 0 2rem;
-}
-
-@-webkit-keyframes ticker {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        visibility: visible;
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+#schedule p::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: repeating-linear-gradient(
+            0deg,
+            rgba(black, 0.15),
+            rgba(black, 0.15) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+        pointer-events: none;
     }
 }
 
-@keyframes ticker {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        visibility: visible;
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
+#schedule p::selection {
+    background: #0080FF;
+    text-shadow: none;
 }
 
 @view-transition {
