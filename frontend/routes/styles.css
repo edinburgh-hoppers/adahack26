@@ -29,6 +29,46 @@ section {
     /*height: 100vh;*/
 }
 
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+a::before {
+  background: hsl(45 100% 70%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.signup input {
+    width: calc(7*1.618rem);
+    height: calc(7*1.618rem);
+    background: #c1f7df;
+    border-radius: 50%;
+    border: 0;
+}
+
 #hero {
     overflow: clip;
     display: relative;
@@ -64,6 +104,80 @@ section {
     margin: 0;
 }
 
+#hero .a {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        font-weight: 900;
+        color: #e10600;
+        position: relative;
+        transition: all 1s ease;
+        text-align: center;
+        margin-bottom: 3ch;
+        margin-right: 3ch;
+    }
+
+    .container__star {
+        transition: all .7s ease-in-out;
+    }
+
+    .first {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        transition: all .7s ease-in-out;
+    }
+
+    .container h1 {
+        position: absolute;
+        font-size: 2rem;
+        z-index: 1;
+    }
+
+    .star-eight {
+        background: #efd510;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        text-align: center;
+    }
+
+    .star-eight::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 150px;
+        width: 150px;
+        background: #efd510;
+        transform: rotate(135deg);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #101211;
+    }
+
+    a:visited {
+        color: #101211;
+    }
+
+    a:hover {
+        color: hotpink;
+    }
+
+    a:active {
+        color: #101211;
+    }
+
+}
+
 #hero .b {
     position: absolute;
     top: 0;
@@ -72,6 +186,7 @@ section {
     right: 0;
     z-index: 10;
     text-align: right;
+    pointer-events: none;
 }
 
 #hero .b h1 {
@@ -181,6 +296,18 @@ section {
 #schedule p::selection {
     background: #0080FF;
     text-shadow: none;
+}
+
+#getting-here {
+    height: 80vh;
+}
+
+#getting-here #map {
+    height: 70vh; /* Critical: Set height */
+    width: 80%; /* Optional: Adjust width */
+    margin: 20px auto; /* Center the map */
+    border: 2px solid #ddd;
+    border-radius: 8px;
 }
 
 @view-transition {

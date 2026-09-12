@@ -11,6 +11,8 @@ export const GET = (_req: Request) =>
                 <link rel="stylesheet" href="/ticker.css">
                 <link rel="stylesheet" href="cdn/fonts/BespokeStencil_Complete/Fonts/WEB/css/bespoke-stencil.css">
                 <link rel="stylesheet" href="cdn/fonts/Supreme_Complete/Fonts/WEB/css/supreme.css">
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+                <title>AdaHack26</title>
             </head>
             <body>
                 <section id="hero">
@@ -20,12 +22,13 @@ export const GET = (_req: Request) =>
                                 <div class="ticker__item">Breaking News: AdaHack declared best hackathon ever...</div>
                                 <div class="ticker__item">... by the Edinburgh Hoppers Team <3</div>
                                 <div class="ticker__item">Its actually awesome you should go - Skye</div>
-                                <div class="ticker__item" style="text-transform: uppercase;">The best pizza in town</div>
+                                <div class="ticker__item"><a href="/signup?src=0">Sign up here!!</a></div>
+                                <div class="ticker__item" style="text-transform: uppercase;">there are prizes</div>
                                 <div class="ticker__item">I don't think you get it its actually really really good you should go!</div>
                             </div>
                         </div>
 
-                        <div class="flex adahacktitle"><h1>Ada</h1><h1>Hack</h1><img><img></div>
+                        <div class="flex adahacktitle"><h1>Ada</h1><h1 style="margin-right: 20%">Hack</h1><div class="container"><h1><a href="/signup?src=1">Sign<br>Up!!!</h1></a><div class="container__star"><div class="star-eight"></div></div></div></div>
                         <div class="flex adahacksubtitle"><h2>Sunday, 5th October 2025&emsp;</h2><h2>Informatics Forum G.07</h2></div>
                         <img src="/cdn/media/AdaHack25-clipped.png">
                     </div>
@@ -62,6 +65,11 @@ export const GET = (_req: Request) =>
                             21:00 END
                         </p>
                     </fieldset>
+                </section>
+                <section id="getting-here">
+                    <div id="map" class="jsonly"></div>
+                    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+                    <script src="map.js"></script>
                 </section>
             </body>
         `
