@@ -23,7 +23,7 @@ export const GET = (_req: Request) =>
                                 <div class="ticker__item">Breaking News: AdaHack declared best hackathon ever...</div>
                                 <div class="ticker__item">... by the Edinburgh Hoppers Team <3</div>
                                 <div class="ticker__item">Its actually awesome you should go - Skye</div>
-                                <div class="ticker__item"><a href="/signup?src=0">Sign up here!!</a></div>
+                                <div class="ticker__item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCSKGyveJcdLX-C1ss0DWQUCBpII6USwRGcLErS5YmwuTyGw/viewform?usp=header">Sign up here!!</a></div>
                                 <div class="ticker__item" style="text-transform: uppercase;">there are prizes</div>
                                 <div class="ticker__item">I don't think you get it its actually really really good you should go!</div>
                                 <div class="ticker__item">A fantastic first hackathon</div>
@@ -32,7 +32,7 @@ export const GET = (_req: Request) =>
                             </div>
                         </div>
 
-                        <div class="flex adahacktitle"><h1>Ada</h1><h1 style="margin-right: 20%">Hack</h1><div class="container"><h1><a href="/signup?src=1">Sign<br>Up!!!</h1></a><div class="container__star"><div class="star-eight"></div></div></div></div>
+                        <div class="flex adahacktitle"><h1>Ada</h1><h1 style="margin-right: 20%">Hack</h1><div class="container"><h1><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCSKGyveJcdLX-C1ss0DWQUCBpII6USwRGcLErS5YmwuTyGw/viewform?usp=header">Sign<br>Up!!!</h1></a><div class="container__star"><div class="star-eight"></div></div></div></div>
                         <div class="flex adahacksubtitle"><h2>Saturday, 3rd October 2026&emsp;</h2><h2>Informatics Forum G.07</h2></div>
                         <img src="/cdn/media/AdaHack25-clipped.png">
                     </div>
@@ -55,7 +55,7 @@ export const GET = (_req: Request) =>
                                     <br><br>
                                     Find us at the Informatics Forum on <span style="color: hotpink">Saturday, 3rd of October, at 8:30</span> (although you may come later, just be aware it may be harder to put you into a team). The event is open to all students, not just Hoppers members, and all skill levels! All you need to bring is yourself and a <abbr title="or other coding machine, ZX Spectrums are allowed but IBM mainframes are a little too big to fit through the door &#58;&#41;">laptop</abbr>.
                                     <br><br>
-                                    Want to join in? Sign up <a href="/signup?src=2">at this link</a> or go to <br><code>adahack.edinburghhoppers.com/signup</code></p>
+                                    Want to join in? Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCSKGyveJcdLX-C1ss0DWQUCBpII6USwRGcLErS5YmwuTyGw/viewform?usp=header">at this link</a> or go to <br><code>adahack.edinburghhoppers.com/signup</code></p>
                         </div>
                     </fieldset>
                 </section>
@@ -102,7 +102,7 @@ export const GET = (_req: Request) =>
                         </details>
                         <details>
                             <summary>Where can I register to be a participant?</summary>
-                            <p><a href="/signup?src=3">Right here!</a></p>
+                            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCSKGyveJcdLX-C1ss0DWQUCBpII6USwRGcLErS5YmwuTyGw/viewform?usp=header">Right here!</a></p>
                         </details>
                         <details>
                             <summary>How can I get in touch with the Hoppers team?</summary>
