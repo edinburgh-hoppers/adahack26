@@ -5,4 +5,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 const eventMarker = L.marker([55.9446912, -3.1875151]).addTo(map);
-eventMarker.bindPopup("<b>AdaHack 2026</b><br>Find us in the informatics forum!").openPopup();
+eventMarker.bindPopup("<b>AdaHack 2026</b><br>Find us in the Informatics Forum!").openPopup();

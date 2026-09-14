@@ -30,11 +30,11 @@ section {
 }
 
 a:link {
-    color: blue;
+    color: black;
 }
 
 a:visited {
-    color: blue;
+    color: black;
 }
 
 a:hover {
@@ -42,23 +42,7 @@ a:hover {
 }
 
 a:active {
-    color: blue;
-}
-
-a::before {
-  background: hsl(45 100% 70%);
-  content: "";
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s ease-in-out;
-  z-index: -1;
-}
-
-a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
+    color: black;
 }
 
 .signup input {
@@ -120,15 +104,10 @@ a:hover::before {
         margin-right: 3ch;
     }
 
-    .container__star {
-        transition: all .7s ease-in-out;
-    }
-
     .first {
         position: absolute;
         top: 20px;
         left: 50px;
-        transition: all .7s ease-in-out;
     }
 
     .container h1 {
@@ -175,7 +154,6 @@ a:hover::before {
     a:active {
         color: #101211;
     }
-
 }
 
 #hero .b {
@@ -228,7 +206,7 @@ a:hover::before {
     padding-bottom: 3vh;
 }
 
-#about fieldset div img {
+#about fieldset div a img {
     margin: 0;
     margin-bottom: 3vh;
     margin-right: 3vw;
@@ -246,10 +224,16 @@ a:hover::before {
     font-size: 1.8rem;
     flex: 1 1 0;
     min-width: 30ch;
+    padding: 0;
 }
 
 #about fieldset div div p {
     margin: 0;
+}
+
+#about fieldset div div p code {
+    text-wrap: pretty;
+    white-space: pre-wrap;
 }
 
 #schedule fieldset {
@@ -304,10 +288,92 @@ a:hover::before {
 
 #getting-here #map {
     height: 70vh; /* Critical: Set height */
-    width: 80%; /* Optional: Adjust width */
+    width: 100%; /* Optional: Adjust width */
     margin: 20px auto; /* Center the map */
     border: 2px solid #ddd;
     border-radius: 8px;
+}
+
+#getting-here fieldset {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    border: 0 none;
+}
+
+#getting-here fieldset legend {
+    font-family: BespokeStencil-Bold, sans-serif;
+}
+
+#faq fieldset {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    border: 0 none;
+}
+
+#faq fieldset legend {
+    font-family: BespokeStencil-Bold, sans-serif;
+}
+
+#faq fieldset {
+    * {
+        box-sizing: border-box;
+    }
+
+    p {
+        font-size: 1rem;
+        max-width: 60ch;
+    }
+
+    details {
+        max-width: 60ch;
+
+        &[open] summary::after {
+            rotate: -180deg;
+        }
+
+        summary {
+            /* Override default "display: list-item" and position the summary text as well as the custom arrow icon */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+    
+            /* General styling */
+            background-color: lightgreen;
+            cursor: pointer;
+            font-weight: 500;
+            margin-block-end: 0.5rem;
+            padding: 0.75rem;
+    
+            /* Fallback code to hide standard marker, especially on Safari */
+            &::marker,
+            &::-webkit-details-marker {
+                display: none;
+            }
+    
+            &::after {
+                /* CSS for chevron shape from https://css-shape.com/chevron/ */
+                --shape-chevron-width: 1rem;
+                --s: calc(var(--shape-chevron-width) / 4);
+
+                /* Styling */
+                content: "";
+                aspect-ratio: 7/5;
+                background: currentColor;
+                clip-path: polygon(0 0, 0 var(--s), 50% 100%, 100% var(--s), 100% 0, 50% calc(100% - var(--s)));
+                flex-shrink: 0;
+                width: var(--shape-chevron-width);
+      
+                /* Animation */
+                rotate: 0deg;
+                transition: rotate 0.35s ease;
+            }
+        }
+    }
 }
 
 @view-transition {
