@@ -181,6 +181,9 @@ a:active {
     #hero .b {
         display: none;
     }
+    #hero .a .container {
+        display: none;
+    }
 }
 
 #about fieldset {
@@ -207,10 +210,12 @@ a:active {
 }
 
 #about fieldset div a img {
+    display: block;
+    width: 30vw;
+    height: auto;
     margin: 0;
     margin-bottom: 3vh;
     margin-right: 3vw;
-    height: 80vh;
     /*box-shadow: 6px 5px 13px #444;*/
     float: left;
     /*clip-path: ellipse(40% 50%);
@@ -345,9 +350,9 @@ a:active {
             /* General styling */
             background-color: lightgreen;
             cursor: pointer;
-            font-weight: 500;
             margin-block-end: 0.5rem;
             padding: 0.75rem;
+            width: 100%;
     
             /* Fallback code to hide standard marker, especially on Safari */
             &::marker,
