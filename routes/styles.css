@@ -321,12 +321,9 @@ a:active {
 
     p {
         font-size: 1rem;
-        max-width: 60ch;
     }
 
     details {
-        max-width: 60ch;
-
         &[open] summary::after {
             rotate: -180deg;
         }

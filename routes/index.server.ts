@@ -86,6 +86,7 @@ export const GET = (_req: Request) =>
                         <noscript>It looks like you have JavaScript turned off. There should be a map here instead of this message but it sadly requires JavaScript. Instead I am here to tell you that you can attend AdaHack in the Informatics Forum at 8:30am or later on the 3rd of October!</noscript>
                     </fieldset>
                 </section>
+                <br>
                 <section id="faq">
                     <fieldset>
                         <legend><h1>Frequently Asked Questions</h1></legend>
