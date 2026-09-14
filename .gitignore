@@ -2,4 +2,3 @@ deno.lock
 .DS_Store
 /generated/
 /generatedAssets.json
-/routes/cdn/fonts/
