@@ -177,15 +177,6 @@ a:active {
     margin-right: 10vh;
 }
 
-@media only screen and (max-width: 1100px) {
-    #hero .b {
-        display: none;
-    }
-    #hero .a .container {
-        display: none;
-    }
-}
-
 #about fieldset {
     margin-left: 8vw;
     margin-right: 8vw;
@@ -383,4 +374,19 @@ a:active {
 
 @view-transition {
     navigation: auto;
+}
+
+@media only screen and (max-width: 1100px) {
+    #hero .b {
+        display: none;
+    }
+    #hero .a .container {
+        display: none;
+    }
+    #about fieldset div a img {
+        width: 100vw;
+    }
+    body {
+        font-size: 2em;
+    }
 }

@@ -45,7 +45,7 @@ export const GET = (_req: Request) =>
                         <legend><h1>About AdaHack</h1></legend>
                         <div>
                             <a title="Daguerrotype of Ada Lovelace taken by Antoine Claudet, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png">
-                                <img width="400px" alt="Ada Lovelace daguerreotype by Antoine Claudet 1843 - cropped" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png/250px-Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail">
+                                <img alt="Ada Lovelace daguerreotype by Antoine Claudet 1843 - cropped" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png/250px-Ada_Lovelace_daguerreotype_by_Antoine_Claudet_1843_-_cropped.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail">
                             </a>
                             <div>
                                 <p>
