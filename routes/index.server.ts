@@ -63,8 +63,7 @@ export const GET = (_req: Request) =>
                     <fieldset>
                         <legend><h1>Schedule</h1></legend>
                         <p>
-                            08:00 Check-In<br>
-                            08:30 Team and table allocation<br>
+                            08:30 Check-In + team and table allocation<br>
                             09:15 Opening presentation & briefs explained<br>
                             09:45 Coding begins!<br>
                             13:00 LUNCH<br>
