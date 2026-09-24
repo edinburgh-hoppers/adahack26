@@ -49,13 +49,13 @@ export const GET = (_req: Request) =>
                             </a>
                             <div>
                                 <p>
-                                    Named after mathematician, writer, and computer scientist <abbr title="The Right Honourable Countess of Lovelace">Ada Lovelace</abbr>, AdaHack is <a href="edinburghhoppers.com" title="The Edinburgh University Official Society for Women, Non-Binary and Transgender people in the School of Informatics">Hoppers'</a> 12 hour yearly hackathon! 
+                                    Named after mathematician, writer, and computer scientist <abbr title="The Right Honourable Countess of Lovelace">Ada Lovelace</abbr>, AdaHack is <a href="https://edinburghhoppers.com" title="The Edinburgh University Official Society for Women, Non-Binary and Transgender people in the School of Informatics">Hoppers'</a> 12 hour yearly hackathon! 
                                     <br><br>
                                     Featuring challenges from our <a href="https://edinburghhoppers.com/sponsors">sponsors</a> and our sister society <a href="https://comp-soc.com" title="University of Edinburgh's Technology society">CompSoc</a>, contenstants will battle it out in teams to write an app, website, program, or tool in just 12 hours for the chance to bring home the prizes in each track! Target one or target them all, AdaHack will bring the snacks &#59;&#41;
                                     <br><br>
                                     Find us at the Informatics Forum on <span style="color: hotpink">Saturday, 3rd of October, at 8:30</span> (although you may come later, just be aware it may be harder to put you into a team). The event is open to all students, not just Hoppers members, and all skill levels! All you need to bring is yourself and a <abbr title="or other coding machine, ZX Spectrums are allowed but IBM mainframes are a little too big to fit through the door &#58;&#41;">laptop</abbr>.
                                     <br><br>
-                                    Want to join in? Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCSKGyveJcdLX-C1ss0DWQUCBpII6USwRGcLErS5YmwuTyGw/viewform?usp=header">at this link</a> or go to <br><code>adahack.edinburghhoppers.com/signup</code></p>
+                                    Want to join in? Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCSKGyveJcdLX-C1ss0DWQUCBpII6USwRGcLErS5YmwuTyGw/viewform?usp=header">at this link</a></p>
                         </div>
                     </fieldset>
                 </section>
